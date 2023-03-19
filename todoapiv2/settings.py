@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'users',
     'rest_framework',
     'djoser',
+    'rest_framework_swagger',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -101,6 +103,7 @@ EMAIL_HOST = 'localhost'
 EMAIL_PORT = 2525
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = 'nithub@gmail.com'
 
 # EMAIL_USE_TLS = True
 
@@ -204,7 +207,7 @@ DJOSER = {
     'SEND_ACTIVATION_EMAIL': True,
     'SERIALIZERS': {
         'user_create': 'users.serializers.UserCreateSerializer',
-        'user': 'users.serializers.UserCreateSerializer',
+        # 'user': 'users.serializers.UserCreateSerializer',
         'user_delete': 'djoser.serializers..UserDeleteSerializer',
 
     }

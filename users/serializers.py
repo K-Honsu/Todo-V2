@@ -8,9 +8,11 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'first_name', 'last_name', 'email', 'password']
+        ref_name = 'users_user'
 
 
 class UserCreateSerializer(BaseUserCreateSerializer):
     class Meta(BaseUserCreateSerializer.Meta):
         model = User
         fields = ['id', 'first_name', 'last_name', 'email', 'password']
+        ref_name = 'djoser_user'
