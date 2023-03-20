@@ -18,10 +18,16 @@ urlpatterns = [
         path('users/', include('users.urls')),
         path('auth/', include('djoser.urls')),
         path('auth/', include('djoser.urls.jwt')),
+        path('tasks/', include('tasks.urls')),
         path('docs/', schema_view.with_ui('swagger',
              cache_timeout=0), name='swagger-schema'),
 
     ])),
-    path('users/', include('users.urls')),
+    # path('users/', include('users.urls')),
+    # path('tasks/', include('tasks.urls')),
+    # #
+    # path('users/', include('users.urls')),
+    # path('auth/', include('djoser.urls')),
+    # path('auth/', include('djoser.urls.jwt')),
 
 ]
