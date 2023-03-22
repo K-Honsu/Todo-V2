@@ -94,7 +94,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Todoapi',
         'USER': 'postgres',
-        'PASSWORD': 'Anjola123@',
+        'PASSWORD': os.environ.get('SECRET_KEY_PGADMIN'),
         'HOST': 'localhost'
     }
 }
