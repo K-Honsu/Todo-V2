@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'djoser',
     'rest_framework_swagger',
     'drf_yasg',
+    'anymail',
     'tasks',
 ]
 
@@ -99,12 +100,16 @@ DATABASES = {
 }
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 2525
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-DEFAULT_FROM_EMAIL = 'nithub@gmail.com'
+EMAIL_BACKEND = "anymail.backends.mailjet.EmailBackend"
+DEFAULT_FROM_EMAIL = "replymenot22@gmail.com"
+
+
+ANYMAIL = {
+    "MAILJET_API_KEY": os.environ.get('SECRET_API_KEY_MAILJET'),
+    "MAILJET_SECRET_KEY": os.environ.get('SECRET_KEY_MAILJET'),
+    "MAILJET_API_URL": "https://api.mailjet.com/v3.1/",
+}
+
 
 # EMAIL_USE_TLS = True
 
