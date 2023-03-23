@@ -1,11 +1,3 @@
-# **THE ANTAPEX BACKEND PROJECT ON KINFLIP WEBSITE**
-
-| **Contributors**                                     | **Role**                         |
-| ---------------------------------------------------- | -------------------------------- |
-| [K-Honsu](https://github.com/K-Honsu)                | Lead Backend Engineer            |
-| [Amure McDonald](https://github.com/Certifieddonnie) | Backend Engineer                 |
-| [ALIPHATIC👽](https://github.com/ALIPHATICHYD)       | Design and FullStack Development |
-
 ## Installing Django📲<hr>
 
 To install Django, you can follow these steps:
